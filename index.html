@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InfoTech Soluções</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 2rem;
+      text-align: center;
+      background: #e6f0ff;
+    }
+    .hero h1, .hero h2 {
+      margin-bottom: 1rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      color: #004080;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #004080;
+      color: white;
+      margin-top: 2rem;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea, button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Roboto', sans-serif;
+    }
+    button {
+      background-color: #004080;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>InfoTech Soluções</h1>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Seu parceiro em tecnologia</h1>
+    <p>Soluções em informática personalizadas para você ou seu negócio</p>
+  </section>
+
+  <section class="services" id="servicos">
+    <div class="card">
+      <h3>Montagem de PCs Personalizados</h3>
+      <p>Configurações sob medida para gamers, criadores de conteúdo e empresas.</p>
+    </div>
+    <div class="card">
+      <h3>Venda de Equipamentos Novos e Recondicionados</h3>
+      <p>Opções econômicas e sustentáveis com garantia e suporte.</p>
+    </div>
+    <div class="card">
+      <h3>Suporte Técnico e Manutenção</h3>
+      <p>Serviços de diagnóstico, upgrade, limpeza e reparos com rapidez.</p>
+    </div>
+    <div class="card">
+      <h3>Consultoria para Pequenas Empresas</h3>
+      <p>Ajuda na escolha, instalação e manutenção de infraestrutura de TI.</p>
+    </div>
+    <div class="card">
+      <h3>Coleta de Lixo Eletrônico</h3>
+      <p>Descarte consciente e seguro de eletrônicos com responsabilidade ambiental.</p>
+    </div>
+  </section>
+
+  <section class="hero" id="sobre">
+    <h2>Sobre a InfoTech</h2>
+    <p>Somos apaixonados por tecnologia e comprometidos com um atendimento próximo, transparente e eficiente. Atuamos localmente e oferecemos diferenciais como montagem sob medida, suporte técnico ágil e soluções sustentáveis.</p>
+  </section>
+
+  <section class="hero" id="contato">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <textarea name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+      <button type="submit">Enviar mensagem</button>
+    </form>
+    <p>Ou entre em contato direto:<br>
+    Email: atendimento@infotech.com.br<br>
+    WhatsApp: (83) 91234-5678<br>
+    Instagram: <a href="https://instagram.com/infotech.solucoes" target="_blank">@infotech.solucoes</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 InfoTech Soluções - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
