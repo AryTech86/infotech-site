@@ -68,7 +68,7 @@
 
   <div class="container">
     <h2>Formulário de Agendamento</h2>
- <form action="mailto:ariadne.c@hotmail.com" method="POST" enctype="text/plain">
+  <form action="mailto:ariadne.c@hotmail.com" method="POST" enctype="text/plain">
   <input type="text" name="nome" placeholder="Seu nome" required>
   <input type="email" name="email" placeholder="Seu e-mail" required>
   <input type="text" name="telefone" placeholder="WhatsApp (opcional)">
@@ -80,7 +80,8 @@
   <input type="time" name="hora" id="hora" required>
 
   <p><strong>O que você quer aprender?</strong></p>
-  <!-- Assuntos -->
+
+  <!-- Iniciantes -->
   <label><input type="checkbox" name="assuntos" value="Introdução ao computador"> Introdução ao computador</label><br>
   <label><input type="checkbox" name="assuntos" value="Windows básico"> Windows básico</label><br>
   <label><input type="checkbox" name="assuntos" value="Word básico"> Word básico</label><br>
@@ -89,6 +90,8 @@
   <label><input type="checkbox" name="assuntos" value="Segurança na internet"> Segurança na internet</label><br>
   <label><input type="checkbox" name="assuntos" value="WhatsApp Web"> WhatsApp Web</label><br>
   <label><input type="checkbox" name="assuntos" value="Google Drive / Docs"> Google Drive / Docs</label><br>
+
+  <!-- Intermediários -->
   <label><input type="checkbox" name="assuntos" value="Word intermediário"> Word intermediário</label><br>
   <label><input type="checkbox" name="assuntos" value="Excel básico/intermediário"> Excel básico/intermediário</label><br>
   <label><input type="checkbox" name="assuntos" value="PowerPoint"> PowerPoint</label><br>
@@ -96,10 +99,6 @@
   <label><input type="checkbox" name="assuntos" value="Organização de pastas e nuvem"> Organização de pastas e nuvem</label><br>
   <label><input type="checkbox" name="assuntos" value="Configurações do Windows"> Configurações do Windows</label><br>
   <label><input type="checkbox" name="assuntos" value="Criação de currículos"> Criação de currículos</label><br>
-
-  <p><strong>Como você prefere ter a aula?</strong></p>
-  <label><input type="checkbox" name="modalidade" value="Presencial"> Presencial</label><br>
-  <label><input type="checkbox" name="modalidade" value="Remota (online)"> Remota (online)</label><br>
 
   <button type="submit">Enviar Agendamento</button>
 </form>
