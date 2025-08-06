@@ -68,13 +68,21 @@
 
   <div class="container">
     <h2>Formulário de Agendamento</h2>
-    <form action="mailto:ariadne.c@hotmail.com" method="POST" enctype="text/plain">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <input type="text" name="telefone" placeholder="WhatsApp (opcional)">
-      <textarea name="mensagem" placeholder="Descreva o que deseja aprender ou o tipo de aula" rows="5" required></textarea>
-      <button type="submit">Enviar Agendamento</button>
-    </form>
+   <form action="mailto:ariadne.c@hotmail.com" method="POST" enctype="text/plain">
+  <input type="text" name="nome" placeholder="Seu nome" required>
+  <input type="email" name="email" placeholder="Seu e-mail" required>
+  <input type="text" name="telefone" placeholder="WhatsApp (opcional)">
+  
+  <label for="data">Data desejada:</label>
+  <input type="date" name="data" id="data" required>
+  
+  <label for="hora">Hora desejada:</label>
+  <input type="time" name="hora" id="hora" required>
+
+  <textarea name="mensagem" placeholder="Descreva o que deseja aprender ou o tipo de aula" rows="5" required></textarea>
+  <button type="submit">Enviar Agendamento</button>
+</form>
+
   </div>
 
   <footer>
